@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.newyear {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  transition: all ease-in 0.5s;
+}
+
+.newyear h1 {
+  font-size: 5vw;
+  background: linear-gradient(45deg,red,blue,orange,rgb(56, 1, 10));
+  background-size: cover;
+  background-position: center center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all ease 0.5s;
+}
+
+span {
+  position: relative;
+  top: 0rem;
+  animation: move 6s linear 5s 1;
+  color: white;
+  transition: all ease 0.5s;
+}
+
+div img {
+  object-fit: cover;
+  width: 7vw;
+  transition: all ease-in 0.5s;
+}
+
+div  .img1 {
+  position: relative;
+  left: 54rem;
+  top: 13rem;
+     /* top: -22rem; */
+  animation: move 10s  linear 0s  1;
+}
+
+div .img2 {
+  position: relative;
+  left: 50rem;
+  top: 13rem;
+       /* top: -22rem; */
+  animation: move 10s  linear 0s  1;
+}
+
+div .img3 {
+  position: relative;
+  left: 46rem;
+  top: 13rem;
+        /* top: -22rem; */
+  animation: move 10s  linear 0s  1;
+}
+
+div .img4 {
+  position: relative;
+  left: 42rem;
+  top: 13rem;
+         /* top: -22rem; */
+  animation: move 10s  linear 0s  1;
+}
+
+.img1,.img2,.img3,.img4 {
+  display: none;
+}
+
+.imgpart2 .imgp1 {
+  position: relative;
+  left: 54rem;
+  top: -7rem;
+  animation: moveuparse 5s linear 0s 1;
+}
+
+.imgpart2 .imgp2 {
+  position: relative;
+  left: 50rem;
+  top: -7rem;
+  animation: moveuparse 5s linear 0s 1;
+}
+
+.imgpart2 .imgp3 {
+  position: relative;
+  left: 46rem;
+  top: -7rem;
+  animation: moveuparse 5s linear 0s 1;
+}
+
+.imgpart2 .imgp4 {
+  position: relative;
+  left: 42rem;
+  top: -7rem;
+  animation: moveuparse 5s linear 0s 1;
+}
+
+@keyframes move {
+       
+  100% {
+    top: -22rem;
+  }
+}
+
+@keyframes moveuparse {
+ 
+  100% {
+    top: 13rem;
+  }
+}
+
+@keyframes showsmoothly {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
